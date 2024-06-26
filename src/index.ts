@@ -221,6 +221,7 @@ function Miniget(url: string | URL, options: Miniget.Options = {}): Miniget.Stre
       }
     };
 
+    console.log(parsed);
     activeRequest = httpLib.request(parsed, (res: IncomingMessage) => {
       // Needed for node v10, v12.
       // istanbul ignore next
